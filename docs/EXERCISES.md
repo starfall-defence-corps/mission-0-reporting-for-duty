@@ -1,5 +1,5 @@
 ---
-CLASSIFICATION: RECRUIT EYES ONLY
+CLASSIFICATION: MIDSHIPMAN EYES ONLY
 MISSION: 0 — REPORTING FOR DUTY
 DOCUMENT: EXERCISES — Phase-by-Phase Operational Instructions
 ---
@@ -191,4 +191,4 @@ Your machine is cleared for the Foundation module. Proceed to [Mission 1.1 — F
 
 ---
 
-*SDC Cyber Command — 2187 — RECRUIT EYES ONLY*
+*SDC Cyber Command — 2187 — MIDSHIPMAN EYES ONLY*
