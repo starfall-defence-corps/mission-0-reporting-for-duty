@@ -1,5 +1,5 @@
 ---
-CLASSIFICATION: RECRUIT EYES ONLY
+CLASSIFICATION: MIDSHIPMAN EYES ONLY
 MISSION: 0 — REPORTING FOR DUTY
 THEATRE: Starfall Defence Corps Academy
 AUTHORITY: SDC Cyber Command, 2187
@@ -80,7 +80,7 @@ The inventory file is **provided** at `workspace/inventory/hosts.yml`. You will 
 | **HINTS.md** | Operational guidance if mission stalls | — |
 | **Gate Reset** | Rebuilds the gatehouse container from scratch | `make reset` |
 
-Consulting **HINTS.md** is authorised at Recruit rank. Using available intelligence is not weakness — it is doctrine.
+Consulting **HINTS.md** is authorised at Midshipman rank. Using available intelligence is not weakness — it is doctrine.
 
 ---
 
@@ -94,4 +94,4 @@ Proceed to **EXERCISES.md** for phase-by-phase operational instructions.
 
 ---
 
-*SDC Cyber Command — 2187 — RECRUIT EYES ONLY*
+*SDC Cyber Command — 2187 — MIDSHIPMAN EYES ONLY*
