@@ -33,7 +33,7 @@ All operations will be conducted using **ANSIBLE** — *Automated Network for Se
 
 Report for duty. Verify your equipment (`make doctor`), boot the gatehouse node (`make setup`), establish communications with it (one ping), and file your duty report (one command). Obtain your first green banner from ARIA.
 
-**End state**: Your machine is proven mission-ready. Your duty report is on file. You hold the rank of Cadet.
+**End state**: Your machine is proven mission-ready. Your duty report is on file. You hold the rank of Midshipman.
 
 ---
 
