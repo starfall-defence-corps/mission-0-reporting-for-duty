@@ -1,0 +1,22 @@
+dependency:
+  name: galaxy
+
+driver:
+  name: default
+
+platforms:
+  - name: sdc-gate
+    managed: false
+    groups:
+      - fleet
+      - gatehouse
+
+provisioner:
+  name: ansible
+  inventory:
+    links:
+      hosts: inventory/hosts.yml
+
+verifier:
+  name: testinfra
+  directory: tests/
