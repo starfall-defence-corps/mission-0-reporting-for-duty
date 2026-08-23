@@ -1,6 +1,6 @@
 # Mission 0: Reporting for Duty — Progress Tracker
 
-**Rank**: Recruit
+**Rank**: Midshipman
 **Mission Progress**: Enrolment — completing this mission makes you a Cadet
 
 Check each item off as you complete it. If a phase is blocked, see `docs/HINTS.md`.
