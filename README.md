@@ -20,6 +20,7 @@ No Ansible knowledge needed. Every command is given to you. Type, run, done.
 - Python 3.10+ (for test environment)
   - On Debian/Ubuntu: `sudo apt install python3-venv`
 - Git
+- [GitHub CLI](https://cli.github.com/) (`gh`) — needed for `make submit`; run `gh auth login` once after installing
 
 > **Windows users**: This mission requires a Linux environment. Install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) and run all commands from within your WSL terminal. Docker Desktop should be configured to use the WSL2 backend.
 
