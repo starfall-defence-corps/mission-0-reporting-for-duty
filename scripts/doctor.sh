@@ -64,9 +64,14 @@ command -v ansible > /dev/null 2>&1 \
     && pass "Ansible installed ($(ansible --version 2>/dev/null | head -1))" \
     || fail "Ansible installed" "Install ansible-core: macOS 'brew install ansible' · Ubuntu 'sudo apt install ansible-core' · or 'pipx install ansible-core'"
 
-command -v gh > /dev/null 2>&1 \
-    && pass "GitHub CLI (gh) installed" \
-    || warn "GitHub CLI (gh) not found" "Needed later for 'make submit' — install from https://cli.github.com (you can finish the lab without it)"
+if command -v gh > /dev/null 2>&1; then
+    pass "GitHub CLI (gh) installed"
+    gh auth status > /dev/null 2>&1 \
+        && pass "GitHub CLI (gh) authenticated" \
+        || warn "GitHub CLI (gh) not authenticated" "Needed later for 'make submit' — run 'gh auth login' (choose GitHub.com, HTTPS) (you can finish the lab without it)"
+else
+    warn "GitHub CLI (gh) not found" "Needed later for 'make submit' — install from https://cli.github.com (you can finish the lab without it)"
+fi
 
 # -- Lab environment ---------------------------------------------------------
 SDC_RUNNING=$(docker ps --format '{{.Names}}' 2>/dev/null | grep -c '^sdc-' || true)
