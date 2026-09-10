@@ -15,7 +15,7 @@ Each red check comes with an instruction line telling you exactly what to instal
 Docker Desktop is not running. Start it, wait for the whale icon to settle, then retry.
 
 **"port is already allocated" / port 2221 busy**
-Another SDC mission lab (or some other service) is using port 2221. All Academy labs share ports 2221-2223, so only one lab can run at a time. Go to the other mission's directory and run `make destroy` there, then `make setup` here.
+Another SDC mission lab (or some other service) is using port 2221. Only one SDC lab at a time is supported. Go to the other mission's directory and run `make destroy` there, then `make setup` here.
 
 **"Pool overlaps with other one on this address space"**
 Another Docker network is using subnet 172.30.0.0/24 — almost always another Academy lab. Run `make destroy` in that mission first.
