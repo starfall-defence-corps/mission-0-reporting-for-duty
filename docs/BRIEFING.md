@@ -61,7 +61,7 @@ Two short phases after boot. Full procedural detail is in **EXERCISES.md**.
 **SSH User**: `cadet`
 **Authentication**: SSH key located at `workspace/.ssh/cadet_key`
 
-The inventory file is **provided** at `workspace/inventory/hosts.yml`. You will build your own in Mission 1.1 — today it is issued equipment.
+The inventory file is **provided** at `workspace/inventory/hosts.yml`. You will build your own in [Mission 1.1](https://github.com/starfall-defence-corps/mission-1-1-fleet-census) — today it is issued equipment.
 
 ### 3d. Rules of Engagement
 
