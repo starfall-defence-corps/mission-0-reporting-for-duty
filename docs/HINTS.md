@@ -1,5 +1,7 @@
 # Mission 0: Reporting for Duty — Hints & Troubleshooting Guide
 
+> 📚 Deeper reference: [FM-6 — FAQ & Simulation Hub](https://github.com/starfall-defence-corps/sdc-academy/blob/main/field-manuals/FM-6-faq-simulation-hub.md)
+
 **Rank**: Midshipman (Maximum Scaffolding)
 
 This guide is your safety net. If something is not working, the answer is likely here. Rule one: **run `make doctor` first** — it diagnoses most problems automatically.
