@@ -161,7 +161,7 @@ From the project root:
 make submit
 ```
 
-This branches, commits, pushes, and opens your review pull request in one command. If you added an `ANTHROPIC_API_KEY` secret (see README), ARIA posts a review on the PR.
+This branches, commits, pushes, and opens your review pull request in one command. If you added an `ANTHROPIC_API_KEY` secret (see README), ARIA posts a review on the PR. Adding the key later? Re-run the workflow from the Actions tab — secrets alone don't trigger a re-run.
 
 ---
 
