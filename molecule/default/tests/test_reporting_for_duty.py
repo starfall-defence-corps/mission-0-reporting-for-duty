@@ -75,7 +75,8 @@ class TestDutyReport:
         )
         assert result.returncode == 0, (
             "ARIA: No duty report found at /home/cadet/duty-report.txt on the "
-            "gatehouse node. File it with: ansible all -m shell -a "
+            "gatehouse node. File it from the repo root (or workspace/) "
+            "with: ansible all -m shell -a "
             "\"echo 'Cadet reporting for duty' > /home/cadet/duty-report.txt\""
         )
 

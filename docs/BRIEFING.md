@@ -7,6 +7,8 @@ AUTHORITY: SDC Cyber Command, 2187
 
 # OPERATION ORDER — MISSION 0: REPORTING FOR DUTY
 
+> [🏠 Mission README](../README.md) · [🧭 Exercises](EXERCISES.md) · [💡 Hints](HINTS.md)
+
 ---
 
 ## 1. SITUATION
@@ -45,7 +47,7 @@ Every environment problem you will ever have — Docker not running, a busy port
 
 ### 3b. Concept of Operations
 
-Two short phases after boot. Full procedural detail is in **EXERCISES.md**.
+Two short phases after boot. Full procedural detail is in **[EXERCISES.md](EXERCISES.md)**.
 
 | Phase | Task | Objective |
 |-------|------|-----------|
@@ -65,7 +67,7 @@ The inventory file is **provided** at `workspace/inventory/hosts.yml`. You will 
 
 ### 3d. Rules of Engagement
 
-- Every command you need is written out in EXERCISES.md. Copy them exactly.
+- Every command you need is written out in [EXERCISES.md](EXERCISES.md). Copy them exactly.
 - If ARIA cannot verify your work, your work is not complete.
 - `make doctor` is authorised — and encouraged — at any time.
 
@@ -90,7 +92,7 @@ Consulting **HINTS.md** is authorised at Midshipman rank. Using available intell
 
 **Commander's Final Order**: No cadet enters the fleet with an unproven machine. Report in, get your green banner, and proceed to Mission 1.1.
 
-Proceed to **EXERCISES.md** for phase-by-phase operational instructions.
+Proceed to **[EXERCISES.md](EXERCISES.md)** for phase-by-phase operational instructions.
 
 ---
 
