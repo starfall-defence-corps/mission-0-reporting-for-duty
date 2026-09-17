@@ -57,7 +57,7 @@ RECEIPT
     echo -e "  workspace/reports/mission-0-receipt.txt"
     echo -e ""
     echo -e "  Duty report received and logged."
-    echo -e "  Welcome to the Starfall Defence Corps, Cadet."
+    echo -e "  Welcome to the Starfall Defence Corps, Midshipman."
     echo -e "  Your machine is cleared for the Foundation"
     echo -e "  module. Proceed to Mission 1.1: Fleet Census."
     echo -e "  ==============================================${RESET}"

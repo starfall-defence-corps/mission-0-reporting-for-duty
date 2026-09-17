@@ -94,7 +94,7 @@ if [ -n "${EXISTING:-}" ]; then
 else
     PR_OUT=$(gh pr create --base main --head "$BRANCH" \
         --title "Mission submission: ${MISSION}" \
-        --body "Cadet submission for ARIA review. Run \`make test\` locally before requesting review." 2>&1)
+        --body "Midshipman submission for ARIA review. Run \`make test\` locally before requesting review." 2>&1)
     if [ $? -ne 0 ]; then
         die "Open the pull request" "GitHub said: ${PR_OUT}"
     fi
