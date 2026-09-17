@@ -8,18 +8,7 @@ DOCUMENT: EXERCISES — Phase-by-Phase Operational Instructions
 
 Complete each phase in sequence. Run `make test` after each phase. Every command you need is written out below — copy it exactly.
 
-**Two directories, two purposes:**
-
-- **Ansible commands** (`ansible ...`): Run from `workspace/` where `ansible.cfg` lives.
-- **Make commands** (`make test`, `make reset`): Run from the **project root** (where the `Makefile` lives).
-
-When a phase says "Run ARIA's Verification", return to the project root first:
-
-```bash
-cd ..        # from workspace/ back to project root
-make test
-cd workspace # return to workspace for the next phase
-```
+**One directory for everything**: run every command in this mission — `ansible ...` and `make ...` — from the **project root** (the folder with the `Makefile`). An `ansible.cfg` lives both there and in `workspace/`, so Ansible works from either; the steps below assume the project root throughout.
 
 ---
 
@@ -73,13 +62,13 @@ This destroys the container and rebuilds it from scratch at any time.
 
 > A cadet who cannot raise the gatehouse on comms is still a recruit. Establish contact.
 
-### Step 1.1 — Change Into the Workspace Directory
+### Step 1.1 — Confirm You Are in the Project Root
 
 ```bash
-cd workspace
+ls Makefile
 ```
 
-You must be in `workspace/` for Ansible to find `ansible.cfg` and the provided inventory.
+If that lists the `Makefile`, you are in the right place — every command from here on runs from this directory.
 
 ### Step 1.2 — Ping the Gatehouse
 
@@ -111,9 +100,7 @@ If you see `UNREACHABLE`, see [HINTS.md](HINTS.md) — the fix is almost always 
 ### Step 1.3 — Run ARIA's Verification
 
 ```bash
-cd ..
 make test
-cd workspace
 ```
 
 Phase 1 should show green. Phase 2 will still be red — that is next.
@@ -126,7 +113,7 @@ Phase 1 should show green. Phase 2 will still be red — that is next.
 
 ### Step 2.1 — File Your Duty Report
 
-One ad-hoc command, run from `workspace/`:
+One ad-hoc command, run from the project root:
 
 ```bash
 ansible all -m shell -a "echo 'Cadet reporting for duty' > /home/cadet/duty-report.txt"
@@ -154,12 +141,11 @@ sdc-gate | CHANGED | rc=0 >>
 ansible all -m shell -a "cat /home/cadet/duty-report.txt"
 ```
 
-Or SSH in like a tourist (from the project root): `make ssh-gate`, then `cat duty-report.txt` and `exit`. Password: `academy`.
+Or SSH in like a tourist: `make ssh-gate`, then `cat duty-report.txt` and `exit`. Password: `academy`.
 
 ### Step 2.3 — Final ARIA Verification
 
 ```bash
-cd ..
 make test
 ```
 
