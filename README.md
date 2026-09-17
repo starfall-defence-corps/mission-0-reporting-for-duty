@@ -105,6 +105,8 @@ To enable PR reviews, add an API key to your repo:
 
 If no key is configured, ARIA skips the PR review — `make test` still works locally.
 
+Added the key **after** opening your PR? Adding a secret does not re-run the review by itself: go to the **Actions** tab → the ARIA Review run → **Re-run all jobs** (or push any new commit to your submission branch). The PR comment updates in place.
+
 ## Troubleshooting
 
 **Anything failing?** Run `make doctor` first — it diagnoses the usual suspects (Docker not running, busy ports, missing tools) and tells you exactly what to fix.
